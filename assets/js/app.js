@@ -3,6 +3,10 @@
 const apikey = 'q7gYwhTD6jf37ZgdhpW9pAtkNEcsVS9Y';
 var gif = 'bucks'
 
+function buttonClicked() {
+    var userInput = $('#userInput').val();
+}
+
 $(document).ready(function(){
 
     $.ajax({
@@ -10,5 +14,6 @@ $(document).ready(function(){
         type: 'GET',
     }).then(function(response){
         console.log(response)
+
     })
 })
