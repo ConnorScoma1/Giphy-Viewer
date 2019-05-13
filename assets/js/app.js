@@ -23,9 +23,9 @@ $(document).ready(function(){
         console.log(response)
 
         for(var i = 0 ; i <= 25 ; i++) {
-            var urls = response.data[i].url // looping urls
+            var urls = response.data[i].images.fixed_height.url // looping urls
 
-            $('.gif-container').prepend('<img class="gif-images" src="'+ urls + '">');
+            $('.gif-container').append('<img class="gif-images" src="'+ urls + '">');
             console.log(urls)
         }
 
