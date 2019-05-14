@@ -14,6 +14,9 @@ $(document).ready(function(){
         event.preventDefault();
         var gif = $('#userInput').val().trim();
 
+        var button = $('<button>'+ gif +'</button>')
+        $('#btn-content').append(button);
+
         console.log(userInput)
 
     $.ajax({
